@@ -20,7 +20,7 @@ jobs:
         key: ${{ secrets.SSH_KEY }}
         script: |
           echo "✅ Connected to VPS"
-          cd /root/Myapp-1 || exit 1
+          cd /root/My-App1 || exit 1
           git pull
           echo "🔄 Pulled latest code"
           docker compose up --build -d
